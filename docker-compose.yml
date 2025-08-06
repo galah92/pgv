@@ -1,0 +1,12 @@
+name: pgv
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg17-bookworm
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - 5432:5432

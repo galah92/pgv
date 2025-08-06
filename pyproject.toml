@@ -1,0 +1,17 @@
+[project]
+name = "pgv"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "asyncpg>=0.30.0",
+    "ollama>=0.5.2",
+    "pgvector>=0.4.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.12.7",
+    "ty>=0.0.1a16",
+]
